@@ -225,36 +225,27 @@ table {
   min-width: 300px;
   background: white;
   height: 100%;
-  overflow: hidden; }
-  .resume .content-region .main-sections {
-    margin-bottom: 56px; }
-    .resume .content-region .main-sections h1 {
-      font-weight: 700;
-      font-size: 2rem;
-      margin-bottom: 56px;
-      text-transform: uppercase; }
-    .resume .content-region .main-sections .education-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 40px;
-      grid-row-gap: 30px;
-      max-width: 90%; }
-      .resume .content-region .main-sections .education-section .education-box {
-        padding: 30px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer; }
-        .resume .content-region .main-sections .education-section .education-box:hover {
-          -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
-          -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1); }
-        .resume .content-region .main-sections .education-section .education-box h5 {
-          font-weight: 500;
-          font-size: 1.3rem;
-          margin-bottom: 1rem; }
-        .resume .content-region .main-sections .education-section .education-box p {
-          font-weight: 300;
-          font-size: 1rem;
-          margin-bottom: 0.5rem; }
+  padding: 56px; }
+
+.resume h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.resume .education-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .resume .education-section .education-box {
+    padding: 30px; }
+    .resume .education-section .education-box h5 {
+      font-weight: 500;
+      font-size: 1.3rem;
+      margin-bottom: 1rem; }
+      .resume .education-section .education-box h5 h6 {
+        margin-bottom: 50px; }
+    .resume .education-section .education-box p {
+      font-weight: 300;
+      font-size: 1rem; }
 
 * {
   box-sizing: border-box; }
@@ -347,9 +338,3 @@ body {
   top: 0;
   bottom: 0;
   transform: translate3d(0, 0, 0); }
-
-.scroll-region {
-  height: 100vh;
-  padding: 56px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
