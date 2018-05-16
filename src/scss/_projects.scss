@@ -1,0 +1,102 @@
+.projects {
+  .info-section {
+    width: 20%;
+  }
+
+  .content-region {
+    margin-left: 20%;
+    width: 80%;
+    min-width: 300px;
+    background: white;
+    height: 100%;
+    overflow: hidden;
+
+    .work-region {
+      margin-bottom: 56px;
+      h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 56px;
+        text-transform: uppercase;
+      }
+
+      .project-region {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .project-box {
+          position: relative;
+          padding: 30px;
+          transition: $btnTrans;
+          cursor: pointer;
+          background: url("../img/Afaneeos.png") no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 400px;
+
+          &:hover {
+            -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+          }
+
+          .grey-highlight {
+            background: #efefef;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            transition: $btnTrans;
+
+            &:hover {
+              opacity: 0.9;
+            }
+
+            .project-information {
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              padding: 56px;
+
+              .project-details {
+                position: relative;
+                font-size: 1rem;
+                text-transform: capitalize;
+                margin: 0 0 1rem 0;
+              }
+
+              .project-title {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 700;
+              }
+
+              .fa-long-arrow-alt-right {
+                position: absolute;
+                bottom: 44px;
+                right: 56px;
+                font-size: 3rem;
+              }
+            }
+
+            h5 {
+              font-weight: 500;
+              font-size: 1.3rem;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-weight: 300;
+              font-size: 1rem;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
