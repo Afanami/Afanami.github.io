@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
+})({5:[function(require,module,exports) {
 //import "../scss/main.scss";
-},{}]},{},[10], null)
+},{}]},{},[5], null)
 //# sourceMappingURL=js.e23a2103.map

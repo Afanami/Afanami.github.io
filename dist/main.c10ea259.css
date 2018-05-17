@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.logo {
+  border: 5px solid white;
+  height: 120px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  line-height: 0; }
+
+.information-region {
+  padding: 50px;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+  .information-region .information-box {
+    position: absolute;
+    bottom: 60px; }
+    .information-region .information-box h4 {
+      font-size: 1rem;
+      color: white;
+      margin: 0.5rem 0; }
+    .information-region .information-box p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: white;
+      margin: 0.2rem 0 1.5rem; }
+  .information-region .icon-region a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 5px;
+    transition: all 0.3s ease-in-out; }
+    .information-region .icon-region a:first-child {
+      padding: 0 5px 0 0; }
+    .information-region .icon-region a:hover {
+      color: lightgrey; }
+
+.home .information-region {
+  padding: 50px;
+  width: 35%; }
+
+.home .content-region {
+  margin-left: 35%;
+  width: 65%;
+  background: white;
+  height: 100%; }
+  .home .content-region .img-container {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 30%; }
+    .home .content-region .img-container .my-img {
+      position: absolute;
+      width: 400px;
+      height: calc(100% - 112px);
+      top: 56px;
+      left: -200px;
+      background: url("https://mk0comicsversenv1t5k.kinstacdn.com/wp-content/uploads/2017/11/mrpopo.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -webkit-box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46);
+      -moz-box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46);
+      box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46); }
+  .home .content-region .profile-region {
+    vertical-align: top;
+    display: inline-block;
+    padding: 25% 0 0 0;
+    max-width: 450px; }
+    .home .content-region .profile-region .profile h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 1.2rem 0; }
+      .home .content-region .profile-region .profile h1 span {
+        color: red; }
+    .home .content-region .profile-region .profile h5 {
+      font-size: 1.1rem;
+      margin: 0 0 2rem 0; }
+    .home .content-region .profile-region .profile p {
+      color: black;
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 0 0 2rem 0; }
+
+.resume .info-section {
+  width: 20%; }
+
+.resume .content-region {
+  margin-left: 20%;
+  width: 80%;
+  min-width: 300px;
+  background: white;
+  height: 100%;
+  overflow: hidden; }
+  .resume .content-region .main-sections {
+    margin-bottom: 56px; }
+    .resume .content-region .main-sections h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 56px;
+      text-transform: uppercase; }
+    .resume .content-region .main-sections .education-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 40px;
+      grid-row-gap: 30px;
+      max-width: 90%; }
+      .resume .content-region .main-sections .education-section .education-box {
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        .resume .content-region .main-sections .education-section .education-box:hover {
+          -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1); }
+        .resume .content-region .main-sections .education-section .education-box h5 {
+          font-weight: 500;
+          font-size: 1.3rem;
+          margin-bottom: 1rem; }
+        .resume .content-region .main-sections .education-section .education-box p {
+          font-weight: 300;
+          font-size: 1rem;
+          margin-bottom: 0.5rem; }
+
+.projects .info-section {
+  width: 20%; }
+
+.projects .content-region {
+  margin-left: 20%;
+  width: 80%;
+  min-width: 300px;
+  background: white;
+  height: 100%;
+  overflow: hidden; }
+  .projects .content-region .work-region {
+    margin-bottom: 56px; }
+    .projects .content-region .work-region h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 56px;
+      text-transform: uppercase; }
+    .projects .content-region .work-region .project-region {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .projects .content-region .work-region .project-region .project-box {
+        position: relative;
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        background: url("Afaneeos.3c63309b.png") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px; }
+        .projects .content-region .work-region .project-region .project-box:hover {
+          -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1); }
+        .projects .content-region .work-region .project-region .project-box .grey-highlight {
+          background: #efefef;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transition: all 0.3s ease-in-out; }
+          .projects .content-region .work-region .project-region .project-box .grey-highlight:hover {
+            opacity: 0.9; }
+          .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: 56px; }
+            .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .project-details {
+              position: relative;
+              font-size: 1rem;
+              text-transform: capitalize;
+              margin: 0 0 1rem 0; }
+            .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .project-title {
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              font-weight: 700; }
+            .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .fa-long-arrow-alt-right {
+              position: absolute;
+              bottom: 44px;
+              right: 56px;
+              font-size: 3rem; }
+          .projects .content-region .work-region .project-region .project-box .grey-highlight h5 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: 1rem; }
+          .projects .content-region .work-region .project-region .project-box .grey-highlight p {
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom: 0.5rem; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 18px;
+  background: red;
+  font-family: "Ubuntu", sans-serif;
+  height: 100%; }
+
+.menu-icon {
+  position: fixed;
+  right: 36px;
+  top: 36px;
+  padding: 20px;
+  z-index: 11; }
+  .menu-icon .fas {
+    font-size: 2rem;
+    color: red; }
+
+.main-button {
+  background: red;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: white;
+  padding: 17px 42px;
+  margin: 0 0 20px 0;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  .main-button:hover {
+    color: lightgrey; }
+
+.resume-button {
+  border: 2px solid black;
+  background: white;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: black;
+  padding: 15px 40px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  .resume-button:hover {
+    background-color: lightgrey; }
+
+#menu {
+  background: red;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      #menu nav a:hover {
+        color: lightgrey; }
+
+.menu-active .menu-icon .fas {
+  color: white; }
+
+.menu-active #menu {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0); }
+
+.scroll-region {
+  height: 100vh;
+  padding: 56px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
