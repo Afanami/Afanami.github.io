@@ -281,7 +281,6 @@ table {
         padding: 30px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
-        background: url("Afaneeos.3c63309b.png") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -304,9 +303,11 @@ table {
           .projects .content-region .work-region .project-region .project-box .grey-highlight:hover {
             opacity: 0.9; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight:hover .project-information .project-details {
-              transform: translate3d(0, 0, 0); }
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight:hover .project-information .project-title {
-              transform: translate3d(0, 0, 0); }
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
           .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information {
             position: absolute;
             width: 100%;
@@ -317,16 +318,16 @@ table {
               font-size: 1rem;
               text-transform: capitalize;
               margin: 0 0 1rem 0;
-              transform: translate3d(-200px, 0, 0);
+              transform: translate3d(-100px, 0, 0);
               opacity: 0;
-              transition: transform 0.3s ease-in-out; }
+              transition: all 0.6s ease-in-out; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .project-title {
               font-size: 1.5rem;
               text-transform: uppercase;
               font-weight: 700;
-              transform: translate3d(-200px, 0, 0);
+              transform: translate3d(-400px, 0, 0);
               opacity: 0;
-              transition: transform 0.3s ease-in-out 0.2s; }
+              transition: all 0.4s ease-in-out 0.2s; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .fa-long-arrow-alt-right {
               position: absolute;
               bottom: 44px;

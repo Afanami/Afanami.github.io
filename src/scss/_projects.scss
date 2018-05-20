@@ -29,7 +29,7 @@
           padding: 30px;
           transition: $btnTrans;
           cursor: pointer;
-          background: url("../img/Afaneeos.png") no-repeat center center;
+          //background: url("../img/Afaneeos.png") no-repeat center center;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
@@ -58,10 +58,12 @@
               .project-information {
                 .project-details {
                   transform: translate3d(0, 0, 0);
+                  opacity: 1;
                 }
 
                 .project-title {
                   transform: translate3d(0, 0, 0);
+                  opacity: 1;
                 }
               }
             }
@@ -77,18 +79,18 @@
                 font-size: 1rem;
                 text-transform: capitalize;
                 margin: 0 0 1rem 0;
-                transform: translate3d(-200px, 0, 0);
+                transform: translate3d(-100px, 0, 0);
                 opacity: 0;
-                transition: $btnTransform;
+                transition: all 0.6s ease-in-out;
               }
 
               .project-title {
                 font-size: 1.5rem;
                 text-transform: uppercase;
                 font-weight: 700;
-                transform: translate3d(-200px, 0, 0);
+                transform: translate3d(-400px, 0, 0);
                 opacity: 0;
-                transition: $btnTransform 0.2s;
+                transition: all 0.4s ease-in-out 0.2s;
               }
 
               .fa-long-arrow-alt-right {
