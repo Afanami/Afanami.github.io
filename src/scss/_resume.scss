@@ -1,5 +1,5 @@
 .resume {
-  .info-section {
+  .information-region {
     width: 20%;
   }
 
@@ -11,7 +11,7 @@
     height: 100%;
     overflow: hidden;
 
-    .main-sections {
+    .main-regions {
       margin-bottom: 56px;
       h1 {
         font-weight: 700;
@@ -20,7 +20,7 @@
         text-transform: uppercase;
       }
 
-      .education-section {
+      .education-region {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;

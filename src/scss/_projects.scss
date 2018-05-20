@@ -1,5 +1,5 @@
 .projects {
-  .info-section {
+  .information-region {
     width: 20%;
   }
 
@@ -51,9 +51,19 @@
             left: 0;
             opacity: 0;
             transition: $btnTrans;
+            overflow: hidden;
 
             &:hover {
               opacity: 0.9;
+              .project-information {
+                .project-details {
+                  transform: translate3d(0, 0, 0);
+                }
+
+                .project-title {
+                  transform: translate3d(0, 0, 0);
+                }
+              }
             }
 
             .project-information {
@@ -67,12 +77,18 @@
                 font-size: 1rem;
                 text-transform: capitalize;
                 margin: 0 0 1rem 0;
+                transform: translate3d(-200px, 0, 0);
+                opacity: 0;
+                transition: $btnTransform;
               }
 
               .project-title {
                 font-size: 1.5rem;
                 text-transform: uppercase;
                 font-weight: 700;
+                transform: translate3d(-200px, 0, 0);
+                opacity: 0;
+                transition: $btnTransform 0.2s;
               }
 
               .fa-long-arrow-alt-right {

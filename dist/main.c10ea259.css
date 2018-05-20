@@ -216,7 +216,7 @@ table {
       line-height: 1.2;
       margin: 0 0 2rem 0; }
 
-.resume .info-section {
+.resume .information-region {
   width: 20%; }
 
 .resume .content-region {
@@ -226,37 +226,37 @@ table {
   background: white;
   height: 100%;
   overflow: hidden; }
-  .resume .content-region .main-sections {
+  .resume .content-region .main-regions {
     margin-bottom: 56px; }
-    .resume .content-region .main-sections h1 {
+    .resume .content-region .main-regions h1 {
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: 56px;
       text-transform: uppercase; }
-    .resume .content-region .main-sections .education-section {
+    .resume .content-region .main-regions .education-region {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 40px;
       grid-row-gap: 30px;
       max-width: 90%; }
-      .resume .content-region .main-sections .education-section .education-box {
+      .resume .content-region .main-regions .education-region .education-box {
         padding: 30px;
         transition: all 0.3s ease-in-out;
         cursor: pointer; }
-        .resume .content-region .main-sections .education-section .education-box:hover {
+        .resume .content-region .main-regions .education-region .education-box:hover {
           -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1); }
-        .resume .content-region .main-sections .education-section .education-box h5 {
+        .resume .content-region .main-regions .education-region .education-box h5 {
           font-weight: 500;
           font-size: 1.3rem;
           margin-bottom: 1rem; }
-        .resume .content-region .main-sections .education-section .education-box p {
+        .resume .content-region .main-regions .education-region .education-box p {
           font-weight: 300;
           font-size: 1rem;
           margin-bottom: 0.5rem; }
 
-.projects .info-section {
+.projects .information-region {
   width: 20%; }
 
 .projects .content-region {
@@ -299,9 +299,14 @@ table {
           right: 0;
           left: 0;
           opacity: 0;
-          transition: all 0.3s ease-in-out; }
+          transition: all 0.3s ease-in-out;
+          overflow: hidden; }
           .projects .content-region .work-region .project-region .project-box .grey-highlight:hover {
             opacity: 0.9; }
+            .projects .content-region .work-region .project-region .project-box .grey-highlight:hover .project-information .project-details {
+              transform: translate3d(0, 0, 0); }
+            .projects .content-region .work-region .project-region .project-box .grey-highlight:hover .project-information .project-title {
+              transform: translate3d(0, 0, 0); }
           .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information {
             position: absolute;
             width: 100%;
@@ -311,11 +316,17 @@ table {
               position: relative;
               font-size: 1rem;
               text-transform: capitalize;
-              margin: 0 0 1rem 0; }
+              margin: 0 0 1rem 0;
+              transform: translate3d(-200px, 0, 0);
+              opacity: 0;
+              transition: transform 0.3s ease-in-out; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .project-title {
               font-size: 1.5rem;
               text-transform: uppercase;
-              font-weight: 700; }
+              font-weight: 700;
+              transform: translate3d(-200px, 0, 0);
+              opacity: 0;
+              transition: transform 0.3s ease-in-out 0.2s; }
             .projects .content-region .work-region .project-region .project-box .grey-highlight .project-information .fa-long-arrow-alt-right {
               position: absolute;
               bottom: 44px;
