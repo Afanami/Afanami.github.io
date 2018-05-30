@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "parcel index.html",
-    "production":
-      "parcel build index.html -d build --public-url ./ --no-minify",
+    "production": "parcel build index.html -d build --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -187,7 +187,7 @@ table {
       height: calc(100% - 112px);
       top: 56px;
       left: -200px;
-      background: url("https://mk0comicsversenv1t5k.kinstacdn.com/wp-content/uploads/2017/11/mrpopo.jpg") no-repeat center center;
+      background: url("https://i.imgur.com/wFMDXaJ.jpg") no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -206,7 +206,7 @@ table {
       line-height: 1.1;
       margin: 0 0 1.2rem 0; }
       .home .content-region .profile-region .profile h1 span {
-        color: red; }
+        color: #144db8; }
     .home .content-region .profile-region .profile h5 {
       font-size: 1.1rem;
       margin: 0 0 2rem 0; }
@@ -281,10 +281,6 @@ table {
         padding: 30px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         height: 400px; }
         .projects .content-region .work-region .project-region .project-box:hover {
           -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
@@ -348,7 +344,7 @@ table {
 html,
 body {
   font-size: 18px;
-  background: red;
+  background: #144db8;
   font-family: "Ubuntu", sans-serif;
   height: 100%; }
 
@@ -360,10 +356,10 @@ body {
   z-index: 11; }
   .menu-icon .fas {
     font-size: 2rem;
-    color: red; }
+    color: #144db8; }
 
 .main-button {
-  background: red;
+  background: #144db8;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -401,7 +397,7 @@ body {
     background-color: lightgrey; }
 
 #menu {
-  background: red;
+  background: #144db8;
   position: fixed;
   width: 100%;
   top: 0;
