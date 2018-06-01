@@ -4,9 +4,12 @@
 @import "home";
 @import "resume";
 @import "projects";
+@import "contact";
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html,
@@ -23,6 +26,7 @@ body {
   top: 36px;
   padding: 20px; // Allows user to click around it not just on
   z-index: 11;
+  cursor: pointer;
   .fas {
     font-size: 2rem;
     color: $colorRed;
@@ -48,6 +52,9 @@ body {
 
   &:hover {
     color: $hoverColor;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
@@ -80,7 +87,7 @@ body {
   width: 100%;
   top: 0;
   bottom: 0;
-  transform: translate3d(-100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
   z-index: 10;
   display: flex;
   align-items: center;
@@ -124,4 +131,9 @@ body {
   padding: 56px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent;
 }

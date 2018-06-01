@@ -1,0 +1,119 @@
+.contact {
+  .information-region {
+    padding: 50px;
+    width: 35%;
+  }
+
+  .content-region {
+    margin-left: 35%;
+    width: 65%;
+    background: white;
+    height: 100%;
+
+    .img-container {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      width: 30%;
+      .form-region {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        width: 400px;
+        height: calc(100% - 112px);
+        top: 56px;
+        left: -200px;
+        background: rgb(48, 45, 45);
+        color: $colorWhite;
+        padding: 46px;
+        -webkit-box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46);
+        -moz-box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46);
+        box-shadow: 10px 10px 77px -1px rgba(0, 0, 0, 0.46);
+        h4 {
+          font-size: 1.5rem;
+          margin-top: 0.5rem;
+          margin-bottom: 4rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid $colorWhite;
+          margin-bottom: 1.5rem;
+          font-size: 0.9rem;
+          line-height: 1.4;
+          color: $hoverColor;
+        }
+        button[type="submit"] {
+          width: 100%;
+          background: $colorRed;
+          border: none;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          border-radius: 30px;
+          color: $colorWhite;
+          padding: 17px 42px;
+          font-size: 1rem;
+          text-align: center;
+          text-transform: uppercase;
+          transition: $btnTrans;
+          cursor: pointer;
+          &:hover {
+            color: $hoverColor;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .contact-region {
+      vertical-align: top;
+      display: inline-block;
+      padding: 56px 0 0 0;
+
+      .contact-info {
+        h1 {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.1;
+          margin: 0 0 1.2rem;
+          span {
+            color: $colorRed;
+          }
+        }
+        .contact-box {
+          max-width: 600px;
+          width: 200%;
+          padding: 30px;
+          transition: $btnTrans;
+          cursor: pointer;
+
+          &:hover {
+            -webkit-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 61px 0px rgba(0, 0, 0, 0.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+          h5 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+          }
+
+          p {
+            color: $colorGrey;
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 0 0 2rem 0;
+          }
+        }
+      }
+    }
+  }
+}

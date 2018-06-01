@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="/main.c10ea259.css">
 <script src="/main.c10ea259.js"></script></head>
 
-<body class="home">
-    <div class="menu-icon">
+<body id="home" class="home">
+    <div class="menu-icon menu-active" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
     </div>
-    <section id="menu">
+    <section id="menu" class="menu">
         <nav>
             <a href="/index.html">Home</a>
             <a href="/resume.html">About</a>
             <a href="/projects.html">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="/contact.html">Contact</a>
         </nav>
     </section>
     <section class="information-region">
         <div class="logo">
             AFAN
+            <div class="spinner1" id="spinner1"></div>
+            <div class="spinner2" id="spinner2"></div>
         </div>
         <div class="information-box">
             <h4>Email</h4>
@@ -36,7 +38,7 @@
                 <a href="https://www.linkedin.com/in/afan-ahmed-656989164/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="# ">
+                <a href="/contact.html">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -52,16 +54,33 @@
                     <br>
                     <span>Ahmed</span>
                 </h1>
-                <h5>Mechatronics Engineer & Web Developer</h5>
-                <p>Hey! My name is Afan Ahmed. I'm a 3rd year Mechatronics Engineer at the University of Auckland doing web
-                    development as a hobby. I'm interested in learning new frameworks and applying them to existing web applications
-                    or even build new web applications from scratch!</p>
+                <h5>Mechatronics Engineer & Aspiring Web Developer</h5>
+                <p>Hey! My name is Afan Ahmed. I'm a 3rd year Mechatronics Engineer at the University of Auckland interested
+                    in learning web development.
+                    <br>
+                    <br> I'm interested in picking up new frameworks and applying them to existing web applications or even building
+                    new web applications from scratch!</p>
                 <a href="/projects.html" class="main-button">Portfolio</a>
                 <a href="/resume.html" class="resume-button">Resumé</a>
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="/js.46c0e84c.js"></script>
+    <script>
+        function toggleMenu() {
+            var element, name, arr;
+            element = document.getElementById("home");
+            name = "menu-active";
+            arr = element.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+                element.className += " " + name;
+            }
+        }
+
+        function toggleMenu() {
+            var element = document.getElementById("home");
+            element.className = element.className.replace(/\bmenu-active\b/g, "");
+        }
+    </script>
 </body>
 
 </html>
