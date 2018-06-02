@@ -51,6 +51,7 @@ body {
   transition: $btnTrans;
 
   &:hover {
+    border: 2px solid cyan;
     color: $hoverColor;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
