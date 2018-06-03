@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./scss/main.scss">
 </head>
 
-<body class="projects">
-    <div class="menu-icon">
+<body id="projects" class="projects">
+    <div class="menu-icon" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
     </div>
     <section id="menu">
@@ -122,7 +122,19 @@
         </div>
         </div>
     </section>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        function toggleMenu() {
+            var element, name, arr;
+            element = document.getElementById("projects");
+            name = "menu-active";
+            arr = element.className.split(" ");
+            if (arr.indexOf(name) == -1) {
+                element.className += " " + name;
+            } else {
+                element.className = element.className.replace(/\bmenu-active\b/g, "");
+            }
+        }
+    </script>
 </body>
 
 </html>

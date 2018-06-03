@@ -506,7 +506,7 @@ body {
   transition: all 0.3s ease-in-out; }
   .main-button:hover {
     border: 2px solid cyan;
-    color: lightgrey;
+    color: cyan;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
