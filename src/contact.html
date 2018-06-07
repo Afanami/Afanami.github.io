@@ -13,6 +13,7 @@
         <i class="fas fa-bars"></i>
     </div>
     <section id="menu">
+        <div id="particles-js"></div>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./resume.html">About</a>
@@ -89,6 +90,42 @@
             }
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 100
+                },
+                "color": {
+                    "value": "#fff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 1,
+                        "color": "#ccc"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 2
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": false,
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 120,
+                }
+            }
+        }, function () {
+            console.log('particles.json loaded');
+        })</script>
 </body>
 
 </html>
