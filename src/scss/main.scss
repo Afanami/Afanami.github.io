@@ -139,6 +139,10 @@ body {
     top: 0;
     bottom: 0;
     transform: translate3d(0, 0, 0);
+    a {
+      display: inline-block;
+      width: 50%;
+    }
   }
 }
 
