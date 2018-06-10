@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "parcel ./src/index.html",
-    "production": "parcel build ./src/index.html -d build --public-url ./",
+    "production": "parcel build ./index.html -d build --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
