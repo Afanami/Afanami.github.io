@@ -38,7 +38,7 @@
       display: inline-block;
       padding: 25% 0 0 0;
       max-width: 450px;
-
+      
       .profile {
         h1 {
           font-size: 2rem;
@@ -91,6 +91,10 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
     background: orange;
+  }
+  .img-container {
+    height: 75%;
+    width: 20%;
   }
 }
 

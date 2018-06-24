@@ -74,6 +74,7 @@
       vertical-align: top;
       display: inline-block;
       padding: 56px 0 0 0;
+      height: 100%; 
 
       .contact-info {
         h1 {
@@ -87,7 +88,7 @@
         }
         .contact-box {
           max-width: 600px;
-          width: 200%;
+          width: 100%;
           padding: 30px;
           transition: $btnTrans;
           cursor: pointer;
