@@ -21,8 +21,7 @@
         height: calc(100% - 112px);
         top: 56px;
         left: -200px;
-        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wVlNUiL2P2UfU6weZEDKb8KOuKfJJwm1wPDvgUaqK02_4QPl")
-          no-repeat center center;
+        background: url("../img/me.jpg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -38,7 +37,7 @@
       display: inline-block;
       padding: 25% 0 0 0;
       max-width: 450px;
-      
+
       .profile {
         h1 {
           font-size: 2rem;

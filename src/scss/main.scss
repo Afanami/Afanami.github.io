@@ -5,7 +5,6 @@
 @import "home";
 @import "resume";
 @import "projects";
-@import "contact";
 
 * {
   box-sizing: border-box;
@@ -53,9 +52,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: $btnTrans;
+  border: 2px solid cyan;
 
   &:hover {
-    border: 2px solid cyan;
     color: cyan;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
